@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE animals SYSTEM "animals.dtd">
+<database name="animals_db">
+    <table name="animals">
+        <columns>
+            <column name="animal_id" type="int" nullable="false" auto_increment="true"/>
+            <column name="name" type="varchar(100)" nullable="false"/>
+            <column name="birth_year" type="int" nullable="false"/>
+            <column name="habitat" type="varchar(100)" nullable="true"/>
+            <column name="lifespan" type="int" nullable="true"/>
+            <column name="type_id" type="int" nullable="true" foreign_key="types.type_id"/>
+        </columns>
+        <data>
+            <row animal_id="1" name="Turtle" birth_year="1900" habitat="rivers" lifespan="300" type_id="3"/>
+            <row animal_id="2" name="tucan" birth_year="2009" habitat="trees" lifespan="40" type_id="2"/>
+            <row animal_id="3" name="platipus" birth_year="1983" habitat="haifa" lifespan="10" type_id="1"/>
+            <row animal_id="5" name="tiger" birth_year="2010" habitat="desert" lifespan="80" type_id="1"/>
+            <row animal_id="8" name="hippo" birth_year="2007" habitat="water" lifespan="80" type_id="1"/>
+            <row animal_id="9" name="shkimaj" birth_year="2019" habitat="poland" lifespan="30" type_id="1"/>
+        </data>
+    </table>
+</database>

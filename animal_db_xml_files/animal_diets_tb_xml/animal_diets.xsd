@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified">
+    <xs:element name="database">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="table">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="columns">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element name="column" maxOccurs="unbounded">
+                                            <xs:complexType>
+                                                <xs:attribute name="name" type="xs:string" use="required"/>
+                                                <xs:attribute name="type" type="xs:string" use="required"/>
+                                                <xs:attribute name="nullable" type="xs:string" use="required"/>
+                                                <xs:attribute name="foreign_key" type="xs:string" use="optional"/>
+                                            </xs:complexType>
+                                        </xs:element>
+                                    </xs:sequence>
+                                </xs:complexType>
+                            </xs:element>
+                            <xs:element name="data">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element name="row" maxOccurs="unbounded">
+                                            <xs:complexType>
+                                                <xs:attribute name="animal_id" type="xs:int" use="required"/>
+                                                <xs:attribute name="diet_id" type="xs:int" use="required"/>
+                                            </xs:complexType>
+                                        </xs:element>
+                                    </xs:sequence>
+                                </xs:complexType>
+                            </xs:element>
+                        </xs:sequence>
+                        <xs:attribute name="name" type="xs:string" use="required"/>
+                    </xs:complexType>
+                </xs:element>
+            </xs:sequence>
+            <xs:attribute name="name" type="xs:string" use="required"/>
+        </xs:complexType>
+    </xs:element>
+</xs:schema>

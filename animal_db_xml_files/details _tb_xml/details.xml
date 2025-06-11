@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE details SYSTEM "details.dtd">
+<database name="animals_db">
+    <table name="details">
+        <columns>
+            <column name="detail_id" type="int" nullable="false" auto_increment="true"/>
+            <column name="animal_id" type="int" nullable="false" foreign_key="animals.animal_id"/>
+            <column name="fur_type" type="varchar(50)" nullable="true"/>
+            <column name="wing_span" type="varchar(50)" nullable="true"/>
+            <column name="scales_type" type="varchar(50)" nullable="true"/>
+        </columns>
+        <data>
+            <row detail_id="1" animal_id="1" fur_type="" wing_span="" scales_type="soft"/>
+            <row detail_id="2" animal_id="5" fur_type="Wrinkled Skin" wing_span="" scales_type=""/>
+        </data>
+    </table>
+</database>

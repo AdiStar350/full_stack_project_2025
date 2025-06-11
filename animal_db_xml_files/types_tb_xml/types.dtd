@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<!ELEMENT database (table)>
+<!ATTLIST database name CDATA #REQUIRED>
+
+<!ELEMENT table (columns, data)>
+<!ATTLIST table name CDATA #REQUIRED>
+
+<!ELEMENT columns (column*)>
+<!ELEMENT column EMPTY>
+<!ATTLIST column
+    name CDATA #REQUIRED
+    type CDATA #REQUIRED
+    nullable CDATA #REQUIRED
+    auto_increment CDATA #IMPLIED>
+
+<!ELEMENT data (row*)>
+<!ELEMENT row EMPTY>
+<!ATTLIST row
+    type_id CDATA #REQUIRED
+    type_name CDATA #REQUIRED>

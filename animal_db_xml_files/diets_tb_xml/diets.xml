@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE diets SYSTEM "diets.dtd">
+<database name="animals_db">
+    <table name="diets">
+        <columns>
+            <column name="diet_id" type="int" nullable="false" auto_increment="true"/>
+            <column name="diet_name" type="varchar(50)" nullable="false"/>
+        </columns>
+        <data>
+            <row diet_id="1" diet_name="Herbivore"/>
+            <row diet_id="2" diet_name="Carnivore"/>
+            <row diet_id="3" diet_name="Omnivore"/>
+        </data>
+    </table>
+</database>
