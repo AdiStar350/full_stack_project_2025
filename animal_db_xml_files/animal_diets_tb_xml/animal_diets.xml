@@ -1,15 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE animal_diets SYSTEM "animal_diets.dtd">
-<database name="animals_db">
+<!-- <!DOCTYPE database SYSTEM "animal_diets.dtd"> -->
+<database xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:noNamespaceSchemaLocation="animal_diets.xsd" name="animals_db">
     <table name="animal_diets">
         <columns>
-            <column name="animal_id" type="int" nullable="false" foreign_key="animals.animal_id"/>
-            <column name="diet_id" type="int" nullable="false" foreign_key="diets.diet_id"/>
+            <column name="animal_id" type="int" nullable="false" foreign_key="animals.animal_id" />
+            <column name="diet_id" type="int" nullable="false" foreign_key="diets.diet_id" />
         </columns>
         <data>
-            <row animal_id="5" diet_id="1"/>
-            <row animal_id="5" diet_id="2"/>
-            <row animal_id="1" diet_id="3"/>
+            <row animal_id="5" diet_id="1" />
+            <row animal_id="5" diet_id="2" />
+            <row animal_id="1" diet_id="3" />
         </data>
     </table>
 </database>

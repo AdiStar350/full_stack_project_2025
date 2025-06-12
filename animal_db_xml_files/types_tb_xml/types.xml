@@ -1,15 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE types SYSTEM "types.dtd">
-<database name="animals_db">
+<!-- <!DOCTYPE database SYSTEM "types.dtd"> -->
+<database xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:noNamespaceSchemaLocation="types.xsd" name="animals_db">
     <table name="types">
         <columns>
-            <column name="type_id" type="int" nullable="false" auto_increment="true"/>
-            <column name="type_name" type="varchar(50)" nullable="false"/>
+            <column name="type_id" type="int" nullable="false" auto_increment="true" />
+            <column name="type_name" type="varchar(50)" nullable="false" />
         </columns>
         <data>
-            <row type_id="1" type_name="Mammal"/>
-            <row type_id="2" type_name="Bird"/>
-            <row type_id="3" type_name="Reptile"/>
+            <row type_id="1" type_name="Mammal" />
+            <row type_id="2" type_name="Bird" />
+            <row type_id="3" type_name="Reptile" />
         </data>
     </table>
 </database>

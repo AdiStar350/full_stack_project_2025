@@ -11,11 +11,16 @@
                                     <xs:sequence>
                                         <xs:element name="column" maxOccurs="unbounded">
                                             <xs:complexType>
-                                            	<xs:attribute name="name" type="xs:string" use="required"/>
-                                                <xs:attribute name="type" type="xs:string" use="required"/>
-                                                <xs:attribute name="nullable" type="xs:string" use="required"/>
-                                                <xs:attribute name="auto_increment" type="xs:string" use="optional"/>
-                                                <xs:attribute name="foreign_key" type="xs:string" use="optional"/>
+                                                <xs:attribute name="name" type="xs:string"
+                                                    use="required" />
+                                                <xs:attribute name="type" type="xs:string"
+                                                    use="required" />
+                                                <xs:attribute name="nullable" type="xs:string"
+                                                    use="required" />
+                                                <xs:attribute name="auto_increment" type="xs:string"
+                                                    use="optional" />
+                                                <xs:attribute name="foreign_key" type="xs:string"
+                                                    use="optional" />
                                             </xs:complexType>
                                         </xs:element>
                                     </xs:sequence>
@@ -26,23 +31,29 @@
                                     <xs:sequence>
                                         <xs:element name="row" maxOccurs="unbounded">
                                             <xs:complexType>
-                                                <xs:attribute name="animal_id" type="xs:int" use="required"/>
-                                                <xs:attribute name="name" type="xs:string" use="required"/>
-                                                <xs:attribute name="birth_year" type="xs:int" use="required"/>
-                                                <xs:attribute name="habitat" type="xs:string" use="optional"/>
-                                                <xs:attribute name="lifespan" type="xs:int" use="optional"/>
-                                                <xs:attribute name="type_id" type="xs:int" use="optional"/>
+                                                <xs:attribute name="animal_id" type="xs:int"
+                                                    use="required" />
+                                                <xs:attribute name="name" type="xs:string"
+                                                    use="required" />
+                                                <xs:attribute name="birth_year" type="xs:int"
+                                                    use="required" />
+                                                <xs:attribute name="habitat" type="xs:string"
+                                                    use="optional" />
+                                                <xs:attribute name="lifespan" type="xs:int"
+                                                    use="optional" />
+                                                <xs:attribute name="type_id" type="xs:int"
+                                                    use="optional" />
                                             </xs:complexType>
                                         </xs:element>
                                     </xs:sequence>
                                 </xs:complexType>
                             </xs:element>
                         </xs:sequence>
-                        <xs:attribute name="name" type="xs:string" use="required"/>
+                        <xs:attribute name="name" type="xs:string" use="required" />
                     </xs:complexType>
                 </xs:element>
             </xs:sequence>
-            <xs:attribute name="name" type="xs:string" use="required"/>
+            <xs:attribute name="name" type="xs:string" use="required" />
         </xs:complexType>
     </xs:element>
 </xs:schema>
